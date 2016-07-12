@@ -26,7 +26,7 @@ function sayHello (event) {
 }
 
 // Unobtrusive event binding
-document.querySelector("button").addEventListener("click", sayHello);
+document.getElementById("hello-btn").addEventListener("click", sayHello);
 
 
 // Movemove event handler
