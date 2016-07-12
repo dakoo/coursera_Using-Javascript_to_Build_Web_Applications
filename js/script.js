@@ -1,5 +1,7 @@
 // Event handling
 function sayHello () {
+  //this == button object
+  this.textContent = "Said it!";
   //Get value of the text input box from #name
   var name = document.getElementById("name").value;
 
