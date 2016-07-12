@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded",
   function (event) {
 
-// Event handling
-function sayHello () {
+//Button click event handler
+function sayHello (event) {
   //this == button object
   this.textContent = "Said it!";
   //Get value of the text input box from #name
@@ -27,6 +27,17 @@ function sayHello () {
 
 // Unobtrusive event binding
 document.querySelector("button").addEventListener("click", sayHello);
+
+
+// Movemove event handler
+document.querySelector("body").addEventListener("mousemove",
+  function (event) {
+    if (event.shiftKey === true) {
+      console.log("x: " + event.clientX);
+      console.log("y: " + event.clientY);
+    }
+  }
+);
 
   }
 );
