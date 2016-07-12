@@ -19,3 +19,6 @@ function sayHello () {
     document.querySelector("h1").textContent = title;
   }
 }
+
+// Unobtrusive event binding
+document.querySelector("button").addEventListener("click", sayHello);
