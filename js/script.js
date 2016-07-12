@@ -39,5 +39,14 @@ document.querySelector("body").addEventListener("mousemove",
   }
 );
 
+
+//Hello-srv-btn event handler 
+document.getElementById("hello-server-button").addEventListener("click", 
+  function () {
+    var name = "Server";
+    var message = "<h2>Hello " + name + "!</h2>"; 
+    document.getElementById("hello-message-from-server").innerHTML = message;
+  });
+
   }
 );
