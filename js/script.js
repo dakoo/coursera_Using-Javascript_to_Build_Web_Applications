@@ -1,3 +1,6 @@
+document.addEventListener("DOMContentLoaded",
+  function (event) {
+
 // Event handling
 function sayHello () {
   //this == button object
@@ -24,3 +27,6 @@ function sayHello () {
 
 // Unobtrusive event binding
 document.querySelector("button").addEventListener("click", sayHello);
+
+  }
+);
